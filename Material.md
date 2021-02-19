@@ -1,6 +1,6 @@
 # Writing Effective Kotlin
 
-## 001 - Data Classes
+## Data Classes
 
 There are typically two types of classes, divided by how they are used
 
@@ -42,5 +42,14 @@ Reference: [Data Classes](https://kotlinlang.org/docs/data-classes.html)
     Phone Number: +91-1234567890
     Email Address: vinay@obvious.in
 - Change my phone number to 0987654321 
+
+### Lambdas
+
+Interfaces let you do two things:
+
+1. Provide configuration behaviour
+2. Support event driven programming
+
+[//]: # (Code sample: lambdas)
 
 

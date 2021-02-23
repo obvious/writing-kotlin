@@ -15,7 +15,7 @@ public class Bank {
 
     public void addAccount(Account account) {
         accounts.add(account);
-
+        accountAddedListener.onAccountAdded(account);
     }
 
     interface OnAccountAddedListener {

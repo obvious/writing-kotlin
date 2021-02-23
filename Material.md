@@ -41,7 +41,7 @@ Reference: [Data Classes](https://kotlinlang.org/docs/data-classes.html)
     Name: Vinay Shenoy
     Phone Number: +91-1234567890
     Email Address: vinay@obvious.in
-- Change my phone number to 0987654321 
+- Change my phone number to +91-0987654321 
 
 ### Lambdas
 
@@ -52,10 +52,15 @@ Interfaces let you do two things:
 
 [//]: # (Code sample: lambdas)
 
+Note: Lambdas can be *BOTH* class properties as well as parameters to methods.
+
 #### Exercises
 References: [Lambdas](https://kotlinlang.org/docs/lambdas.html)
 
-
+- Add a `removeAccount` method to the `Bank` Kotlin class
+- Add a lambda method that will get invoked whenever an account is removed that gets invoked with the removed account
+- Configure `firstBank` to log the removed accounts using the Android logcat
+- Configure `secondBank` to log the removed account, but only if the account balance is over 5000 rupees
 
 ### Null-safety
 Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)

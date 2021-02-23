@@ -52,4 +52,14 @@ Interfaces let you do two things:
 
 [//]: # (Code sample: lambdas)
 
+### Null-safety
+Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
+
+- Kotlin's type system variations are mainly to remove null references from code. We'll see elvis operator, not-null assertion operator and safe calls as well.
+
+1. Nullable type variables
+2. Non-nullable types
+
+[//]: # (Code sample - null safety - NullSafety.kt)
+
 

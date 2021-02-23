@@ -62,4 +62,10 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
 [//]: # (Code sample - null safety - NullSafety.kt)
 
+### Utitity classes
+Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
+
+- Syntax <className>.<functionName>
+- Ability to extend the class without having to inherit from a class.
+- We cannot modify the existing class using Extension functions.
 

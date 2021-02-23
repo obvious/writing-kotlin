@@ -62,6 +62,13 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
 [//]: # (Code sample - null safety - NullSafety.kt)
 
+### Sealed classes
+Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
+
+- Better state handling with restricted types.
+
+[//]: # (Code sample - sealed classes - Network Request)
+
 ### Utitity classes
 Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
 

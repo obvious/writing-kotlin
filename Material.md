@@ -84,6 +84,13 @@ Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 
 [//]: # (Code sample - sealed classes - Network Request)
 
+### Exercises
+
+- Create a `Failure` sealed class and add types of errors. Every error must be a data class that takes a string as a parameter.
+Eg:  `ServerError`,`AuthenticationError` and `Exceptions` where exceptions would be unknown errors.
+- Create a function that takes `Failure` as a parameter. Implement all the failures in it using a `when` condition.
+Print "something went wrong` for unknown exceptions and the error names for the rest of them.
+
 ### Utitity classes
 Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
 

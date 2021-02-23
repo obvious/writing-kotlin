@@ -52,6 +52,11 @@ Interfaces let you do two things:
 
 [//]: # (Code sample: lambdas)
 
+#### Exercises
+References: [Lambdas](https://kotlinlang.org/docs/lambdas.html)
+
+
+
 ### Null-safety
 Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 

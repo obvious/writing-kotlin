@@ -72,6 +72,11 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
 [//]: # (Code sample - null safety - NullSafety.kt)
 
+### Exercises
+
+- Create a data class `Dessert` that has your favorite pastries with the `amountOfCalories` being a nullable type
+- Create an instance and add a `setCalories` function that takes `amountOfCalories` as a parameter and use a safe call to have an integer value or a -1.
+
 ### Sealed classes
 Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 

@@ -115,5 +115,13 @@ Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
 
 - Syntax <className>.<functionName>
 - Ability to extend the class without having to inherit from a class.
-- We cannot modify the existing class using Extension functions.
+- Utility classes are generally made when we don't have access to the original source code.
+- Example : if we want to add an email validation method to a string.
+In Java, we would create a StringUtil class, and add a method like isEmail(String) , so we can call StringUtil.isEmail(value).
+This can be replaced with extension methods in Kotlin, so we can call something like value.isEmail
+
+### Exercises
+
+- Create a class Shape that has `Circle` and `Triangle` as its functions which will print "this is a circle" or "triangle" in it.
+Add extension function `getRadius` that takes a integer and call this in the main function.
 

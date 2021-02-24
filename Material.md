@@ -88,6 +88,14 @@ Common operations typically done on collections (`List`):
 
 [//]: # (Code sample - collections)
 
+#### Exercises
+Reference: [Collections](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/)
+
+1. Find all mutants with 10 or more years of experience
+2. Find the real names of all the good mutants
+3. Concatenate the code names of all the senior mutants with a ", " (Hint: look at `joinToString``)
+4. Concatenate the code names of all the good and evil mutants separately with a ", " and then concatenate these two strings together with a " VS. "
+
 ### Sealed classes
 Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 

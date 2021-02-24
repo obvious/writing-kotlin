@@ -25,6 +25,53 @@ public class NetworkRequest {
         this(url, Method.GET, null, timeout);
     }
 
+    public NetworkRequest.Builder newRequest() {
+        return new Builder(this);
+    }
+
+    public static class Builder {
+        private String url;
+
+        private Method method;
+
+        private String body;
+
+        private long timeout;
+
+        public Builder(String url) {
+            this.url = url;
+            this.method = Method.GET;
+            this.body = null;
+            this.timeout = 30_000;
+        }
+
+        public Builder(NetworkRequest request) {
+            this.url = request.url;
+            this.method = request.method;
+            this.body = request.body;
+            this.timeout = request.timeout;
+        }
+
+        public Builder method(Method method) {
+            this.method = method;
+            return this;
+        }
+
+        public Builder body(String body) {
+            this.body = body;
+            return this;
+        }
+
+        public Builder timeout(long timeout) {
+            this.timeout = timeout;
+            return this;
+        }
+
+        public NetworkRequest build() {
+            return new NetworkRequest(url, method, body, timeout);
+        }
+    }
+
     /*    public NetworkRequest.Builder newRequest() {
         return new Builder(this);
     }

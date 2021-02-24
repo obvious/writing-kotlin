@@ -16,42 +16,33 @@ fun scratch() {
     )
 
     // Iteration (`forEach`)
-    // Print the names of all mutants in "<Real name> (Code name)" format
-    for (mutant in mutants) {
+    // Print the names of all mutants in "<Real name> (<Code name>)" format
+    mutants
+        .forEach { mutant ->
         val name = "${mutant.actualName} (${mutant.codeName})"
         Log.d("X-Men", name)
     }
 
     // Transformation (`map`)
     // Print the total days of experience of each mutant in "<Code name> - <days>" format
-    for (mutant in mutants) {
-        val daysOfExperience = mutant.yearsOfExperience * 365
-        Log.d("X-Men", "${mutant.codeName} - $daysOfExperience")
-    }
+    mutants
+        .map {
+            val daysOfExperience = it.yearsOfExperience * 365
+            "${it.codeName} - $daysOfExperience"
+        }
+        .forEach { Log.d("X-Men", it) }
 
     // Filtering (`filter`)
     // Find all the junior mutants and separate them into good and evil lists
-    val goodMutants = ArrayList<Mutant>()
-    val evilMutants = ArrayList<Mutant>()
-
-    for (mutant in mutants) {
-        if (mutant.alignment == Alignment.Good) {
-            goodMutants.add(mutant)
-        } else {
-            evilMutants.add(mutant)
-        }
-    }
+    val (goodMutants, badMutants) = mutants
+        .filter { it.rank == Rank.Junior }
+        .partition { it.alignment == Alignment.Good }
 
     // Grouping (`associate`)
     // Group all mutants by rank
-    val mutantsByRank = HashMap<Rank, ArrayList<Mutant>>()
-    mutantsByRank[Rank.Leader] = ArrayList()
-    mutantsByRank[Rank.Junior] = ArrayList()
-    mutantsByRank[Rank.Senior] = ArrayList()
-
-    for (mutant in mutants) {
-        mutantsByRank[mutant.rank]!!.add(mutant)
-    }
+    mutants.groupBy { it.rank }
+    val mutantsByRank = mutants.groupBy { it.rank }
+    val seniorMutants = mutantsByRank[Rank.Senior]
 
     // Complex operations
     // Find the cumulative days of experience of all the good mutants

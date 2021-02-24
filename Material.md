@@ -41,7 +41,9 @@ Reference: [Data Classes](https://kotlinlang.org/docs/data-classes.html)
     Name: Vinay Shenoy
     Phone Number: +91-1234567890
     Email Address: vinay@obvious.in
-- Change my phone number to +91-0987654321 
+- Change my phone number to +91-0987654321
+
+# DONE
 
 ### Lambdas
 
@@ -62,6 +64,8 @@ References: [Lambdas](https://kotlinlang.org/docs/lambdas.html)
 - Configure `firstBank` to log the removed accounts using the Android logcat
 - Configure `secondBank` to log the removed account, but only if the account balance is over 5000 rupees
 
+# DONE
+
 ### Null-safety
 Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
@@ -69,13 +73,15 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
 1. Nullable type variables
 2. Non-nullable types
-
+ 
 [//]: # (Code sample - null safety - NullSafety.kt)
 
 ### Exercises
 
 - Create a data class `Dessert` that has your favorite pastries with the `amountOfCalories` being a nullable type
 - Create an instance and add a `setCalories` function that takes `amountOfCalories` as a parameter and use a safe call to have an integer value or a -1.
+
+# DONE
 
 ### Collection operations
 
@@ -96,6 +102,8 @@ Reference: [Collections](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.col
 3. Concatenate the code names of all the senior mutants with a ", " (Hint: look at `joinToString``)
 4. Concatenate the code names of all the good and evil mutants separately with a ", " and then concatenate these two strings together with a " VS. "
 
+# DONE
+
 ### Sealed classes
 Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 
@@ -109,6 +117,8 @@ Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 Eg:  `ServerError`,`AuthenticationError` and `Exceptions` where exceptions would be unknown errors.
 - Create a function that takes `Failure` as a parameter. Implement all the failures in it using a `when` condition.
 Print "something went wrong` for unknown exceptions and the error names for the rest of them.
+
+# DONE
 
 ### Utitity classes
 Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
@@ -124,4 +134,7 @@ This can be replaced with extension methods in Kotlin, so we can call something 
 
 - Create a class Shape that has `Circle` and `Triangle` as its functions which will print "this is a circle" or "triangle" in it.
 Add extension function `getRadius` that takes a integer and call this in the main function.
+
+# Additional information
+- Class properties: https://kotlinlang.org/docs/properties.html
 

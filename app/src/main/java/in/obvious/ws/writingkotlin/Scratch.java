@@ -10,9 +10,21 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
+import in.obvious.ws.writingkotlin.dataclasses.java.Method;
+import in.obvious.ws.writingkotlin.dataclasses.java.NetworkRequest;
 import in.obvious.ws.writingkotlin.lambdas.java.Account;
 
 public class Scratch {
+
+    public void scratchForBuilder() {
+        final NetworkRequest request = new NetworkRequest.Builder("https://192.168.0.1")
+                .build();
+
+        final NetworkRequest login = request.newRequest()
+                .method(Method.POST)
+                .body("vinay@obvious.in|password")
+                .build();
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void scratch() {

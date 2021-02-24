@@ -77,6 +77,17 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 - Create a data class `Dessert` that has your favorite pastries with the `amountOfCalories` being a nullable type
 - Create an instance and add a `setCalories` function that takes `amountOfCalories` as a parameter and use a safe call to have an integer value or a -1.
 
+### Collection operations
+
+Common operations typically done on collections (`List`):
+
+1. Iteration: Do something on every item
+2. Transformation: Convert each item into some other item
+3. Filtering: Select some items out of the list
+4. Grouping: Group information based on some criteria
+
+[//]: # (Code sample - collections)
+
 ### Sealed classes
 Reference: [Sealed classes](https://kotlinlang.org/docs/sealed-classes.html)
 

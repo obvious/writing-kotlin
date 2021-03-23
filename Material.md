@@ -111,18 +111,19 @@ Eg:  `ServerError`,`AuthenticationError` and `Exceptions` where exceptions would
 - Create a function that takes `Failure` as a parameter. Implement all the failures in it using a `when` condition.
 Print "something went wrong` for unknown exceptions and the error names for the rest of them.
 
-### Utitity classes
+### Utility classes
 Reference: [Extension functions](https://kotlinlang.org/docs/extensions.html)
 
+- Utility classes are generally made when we don't have access to the original source code. 
+    - Example : if we want to add an email validation method to a string.
+    In Java, we would create a StringUtil class, and add a method like isEmail(String) , so we can call StringUtil.isEmail(value).
+    This can be replaced with extension methods in Kotlin, so we can call something like value.isEmail
 - Syntax <className>.<functionName>
 - Ability to extend the class without having to inherit from a class.
-- Utility classes are generally made when we don't have access to the original source code.
-- Example : if we want to add an email validation method to a string.
-In Java, we would create a StringUtil class, and add a method like isEmail(String) , so we can call StringUtil.isEmail(value).
-This can be replaced with extension methods in Kotlin, so we can call something like value.isEmail
+- We wont get private information in the class, we will still have access to public fields and functions. It's just a syntactic sugar for Util classes.
 
 ### Exercises
 
-- Create a class Shape that has `Circle` and `Triangle` as its functions which will print "this is a circle" or "triangle" in it.
-Add extension function `getRadius` that takes a integer and call this in the main function.
+- Add a extension function for `String` to check whether it's an email or not. We can check if the string contains `@` to determine if it's email or not.
+- Add a extension function for `Int` that takes in parameter to check if it's divisible by it or not.
 

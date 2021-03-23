@@ -1,24 +1,20 @@
 package `in`.obvious.ws.writingkotlin.nullsafety.kotlin
 
-fun main() {
-    // nullable and non-nullable types
-    var number: Int = 6
-    val unknownNumber: Int?
-    val anotherNumber: Int? = null
+class NullSafety {
+    private val phoneNumber: String? = loadPhoneNumber()
 
-    // safe calls
-    val name: String? = someFunctionReturningAStringThatCanBeNull()
-    val lengthOfName = name?.length // this will compile
+    fun main() {
+        if (phoneNumber != null) {
+            callUser(phoneNumber = phoneNumber)
+        }
+    }
 
-    // elvis operator
-    val cookieName: String? = null
-    val l: Int = if (cookieName != null) cookieName.length else -1
-    val usingElvis = cookieName?.length ?: -1  // elvis / Java Optional.getOrElse()
+    private fun callUser(phoneNumber: String) {
 
-    // not-null assertion operator
-    val npeLovers = cookieName!!.length
-}
+    }
 
-fun someFunctionReturningAStringThatCanBeNull(): String? {
-    return null
+    private fun loadPhoneNumber(): String? {
+        return null
+        // return phoneNumber;
+    }
 }

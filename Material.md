@@ -65,7 +65,8 @@ References: [Lambdas](https://kotlinlang.org/docs/lambdas.html)
 ### Null-safety
 Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
-- Kotlin's type system variations are mainly to remove null references from code. We'll see elvis operator, not-null assertion operator and safe calls as well.
+- Kotlin's type system variations are mainly to remove null references from code. We'll see elvis operator, not-null assertion operator and safe calls as well. Kotlin also supports smart cast and type
+inference.
 
 1. Nullable type variables
 2. Non-nullable types
@@ -74,8 +75,8 @@ Reference: [Null safety](https://kotlinlang.org/docs/null-safety.html)
 
 ### Exercises
 
-- Create a data class `Dessert` that has your favorite pastries with the `amountOfCalories` being a nullable type
-- Create an instance and add a `setCalories` function that takes `amountOfCalories` as a parameter and use a safe call to have an integer value or a -1.
+- Create a data class `Dessert` that has your favorite pastries with the `amountOfCalories` as non-null Int
+- Create an instance and add a `setCalories` function that takes nullable `amountOfCalories` as a parameter and use a safe call to have an integer value or a -1.
 
 ### Collection operations
 
